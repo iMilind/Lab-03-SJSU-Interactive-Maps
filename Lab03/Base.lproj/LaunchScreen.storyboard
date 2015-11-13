@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SJSU Interactive Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gy-q3-DjU">
+                                <rect key="frame" x="63" y="317" width="249" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CmpE 277" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXd-lf-bee">
+                                <rect key="frame" x="126" y="355" width="123" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab 03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6X-GB-DAe">
+                                <rect key="frame" x="146" y="396" width="83" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapsearch" translatesAutoresizingMaskIntoConstraints="NO" id="2kq-iD-nI6">
+                                <rect key="frame" x="59" y="53" width="256" height="256"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="MLe-hV-Vlp"/>
+                                    <constraint firstAttribute="height" constant="256" id="P8i-cY-yxp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g6X-GB-DAe" firstAttribute="top" secondItem="CXd-lf-bee" secondAttribute="bottom" constant="8" id="514-WC-f5T"/>
+                            <constraint firstItem="g6X-GB-DAe" firstAttribute="centerX" secondItem="7gy-q3-DjU" secondAttribute="centerX" id="O4E-Wt-1vV"/>
+                            <constraint firstItem="2kq-iD-nI6" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="33" id="RN9-1M-xol"/>
+                            <constraint firstItem="2kq-iD-nI6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YZB-t4-0OR"/>
+                            <constraint firstItem="7gy-q3-DjU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dcv-3Z-zJO"/>
+                            <constraint firstItem="CXd-lf-bee" firstAttribute="top" secondItem="7gy-q3-DjU" secondAttribute="bottom" constant="5" id="eWa-lv-DCn"/>
+                            <constraint firstItem="CXd-lf-bee" firstAttribute="centerX" secondItem="7gy-q3-DjU" secondAttribute="centerX" id="lon-N3-UMa"/>
+                            <constraint firstItem="7gy-q3-DjU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nFr-pj-JtM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mapsearch" width="256" height="256"/>
+    </resources>
+</document>
